@@ -109,5 +109,9 @@ puts hash
 
 puts " "
 puts " Problem 10 "
+contact_data = [["joe@email.com", "123 Main st.", "555-123-4567"], ["sally@email.com", "404 Not Found Dr.", "123-234-3454"]] 
+contact1 = {":e-mail" => contact_data[0][0].to_s}, {":adress" => contact_data[0][1].to_s},{":phone" => contact_data[0][2].to_s}
+contact2 = {":e-mail" => contact_data[1][0].to_s}, {":adress" => contact_data[1][1].to_s},{":phone" => contact_data[1][2].to_s}
+puts contacts = {"Joe Smith" => contact1, "Sally Johnson" => contact2}
 
 
