@@ -144,4 +144,16 @@ puts " "
 puts " Problem 13 "
 a = ['white snow', 'winter wonderland', 'melting ice','slippery sidewalk', 'salted roads', 'white trees']
 print a.collect { |x| x.split(" ") }.flatten
+#Problem 14
+#What will the following program output?
+#hash1 = {shoes: "nike", "hat" => "adidas", :hoodie => true}
+#hash2 = {"hat" => "adidas", :shoes => "nike", hoodie: true}
 
+#if hash1 == hash2 
+#puts "These hashes are the same!"
+#else puts "These hashes are not the same!"
+#end
+
+puts ""
+puts " Problem 14"
+puts " Эта программа  сравнивает 2 хэша на предмет их равенства. Для равенства необходимо,  что бы  они содержали одинаковое количество ключей и каждая пара ключ- значение была эквивалентна, пары ключ- значение необязательно должны идти в одинаковом порядке для равенства, но в нашем примене совпадает и количество ключей и их порядок. Поэтому результат работы программы These hashes are the same! "
