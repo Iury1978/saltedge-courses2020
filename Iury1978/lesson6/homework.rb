@@ -126,8 +126,22 @@ puts contacts["Sally Johnson"][2]
 #Then recreate the arr and get rid of all of the words that start with "s" or starts with "w".
 
 puts " "
-puts " Problem 12"
+puts " Problem 12.1"
 arr = ['snow', 'winter', 'ice', 'slippery', 'salted roads', 'white trees']
 arr_print =arr.delete_if{|x| x.start_with?("s")}
 puts arr_print
+puts ""
+puts " Problem 12.2"
+arr_print1 =arr.delete_if{|x| x.start_with?("s","w")}
+puts arr_print1
+
+#Problem 13
+#Take the following array:
+#a = ['white snow', 'winter wonderland', 'melting ice','slippery sidewalk', 'salted roads', 'white trees']
+#and turn it into a new array that consists of strings containing one word.
+#(ex. ["white snow", etc...] → ["white", "snow", etc...]. Look into using Array's map and flatten methods, as well as String's split method.
+puts " "
+puts " Problem 13 "
+a = ['white snow', 'winter wonderland', 'melting ice','slippery sidewalk', 'salted roads', 'white trees']
+print a.collect { |x| x.split(" ") }.flatten
 
