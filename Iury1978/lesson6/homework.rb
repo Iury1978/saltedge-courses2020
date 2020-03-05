@@ -157,3 +157,30 @@ print a.collect { |x| x.split(" ") }.flatten
 puts ""
 puts " Problem 14"
 puts " Эта программа  сравнивает 2 хэша на предмет их равенства. Для равенства необходимо,  что бы  они содержали одинаковое количество ключей и каждая пара ключ- значение была эквивалентна, пары ключ- значение необязательно должны идти в одинаковом порядке для равенства, но в нашем примене совпадает и количество ключей и их порядок. Поэтому результат работы программы These hashes are the same! "
+
+puts " "
+# Problem 15
+#Programmatically loop or iterate over the contacts hash from exercise 10, and populate the associated data from the contact_data array.
+#Hint: you will probably need to iterate over ([:email, :address, :phone]), some helpful methods might be the Array shift and first methods.
+
+puts " "
+puts " Problem 15"
+
+contact_data = [["joe@email.com", "123 Main st.", "555-123-4567"], ["sally@email.com", "404 Not Found Dr.", "123-234-3454"]]
+# сначала пробовал так, пока не понял как вызывать shift в массиве, содержащим массивы
+# a=0
+# b=0
+# loop do
+#    puts "Joe Smith " + contact_data[a][b].to_s
+#    puts "Sally Johnson  " + contact_data[a+1][b].to_s
+# b +=1
+#    break if b ==3
+# end
+
+a = 1
+while a < 4
+   puts "Joe Smith " + contact_data[0].shift.to_s
+   puts "Sally Johnson " + contact_data[1].shift.to_s
+a += 1
+   end
+
